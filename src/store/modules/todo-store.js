@@ -50,7 +50,6 @@ export default {
             try {
                 // var todos = await todoService.query(state.filterBy);
                 var todos = await todoService.query();
-                console.log('todos store', todos);
                 commit({ type: 'setTodos', todos });
             } catch (err) {
                 console.error('Cannot Load todos', err);
